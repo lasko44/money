@@ -6,14 +6,14 @@
         </h4>
     </div>
     <ul class="nav-list">
-        <li><a href="{{route('home')}}">Home</a> </li>
-        <li><a href="{{route('home')}}">About</a> </li>
-        <li><a href="{{route('home')}}">Blog</a> </li>
-        <li><a href="{{route('login')}}">Login</a> </li>
+        <li class="py-1"><a href="{{route('home')}}">Home</a> </li>
+        <li class="py-1"><a href="{{route('home')}}">About</a> </li>
+        <li class="py-1"><a href="{{route('home')}}">Blog</a> </li>
+        <li class="py-1"><a href="{{route('login')}}">Login</a> </li>
         <li>
             <label>
-                <i class="fas fa-search"></i>
-                <input type="text" name="global-search" placeholder="search">
+                <i class="fas fa-search fa-lg blue-saphire"></i>
+                <input class="rounded-pill px-4 py-1" type="text" name="global-search" placeholder="search">
             </label>
         </li>
     </ul>
