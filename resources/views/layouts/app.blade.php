@@ -19,12 +19,10 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="bg-extra-pale-spring">
     <div id="app">
         @include('partials.main-nav')
-        <main class=" bg-extra-pale-spring">
-            @yield('content')
-        </main>
+        @yield('content')
     </div>
     <script>
         function  navSlide(){
@@ -33,4 +31,5 @@
         }
     </script>
 </body>
+@include('partials.footer')
 </html>

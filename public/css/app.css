@@ -18367,18 +18367,10 @@ body {
   width: 100vw;
 }
 
-body {
-  height: 100vh;
-}
-
 .content-container {
   max-width: 90vw;
   margin-left: auto;
   margin-right: auto;
-}
-
-main {
-  height: 100vh;
 }
 
 .abril {
@@ -18479,6 +18471,26 @@ main {
 
 .h-line-thick {
   height: 15px;
+}
+
+.v-line,
+.v-line-thin,
+.v-line-thick {
+  height: 95%;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.v-line-thin {
+  width: 2px;
+}
+
+.v-line {
+  width: 5px;
+}
+
+.v-line-thick {
+  width: 10px;
 }
 
 .w-10-v {
