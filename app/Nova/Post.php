@@ -3,7 +3,12 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Post extends Resource
@@ -20,7 +25,7 @@ class Post extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'title';
 
     /**
      * The columns that should be searched.
@@ -28,7 +33,7 @@ class Post extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'id','title','body','sub_title'
     ];
 
     /**
@@ -41,6 +46,27 @@ class Post extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
+            Text::make('Title','title')->required(),
+            Text::make('Sub Title','sub_title')->nullable(),
+            Trix::make('Body','body')->required(),
+            Image::make('Image', 'file_name')->store(function (Request $request){
+                $path = $request->file('file_name')->store('images', 's3');
+                Storage::disk('s3')->setVisibility($path, 'public');
+                $url = Storage::disk('s3')->url($path);
+                return[
+                    'file_name'=>basename($path),
+                    'url'=>$url
+                ];
+            }) ->disk('s3')
+                ->thumbnail(function ($value, $disk) {
+                    return $value
+                        ? Storage::disk($disk)->url('images/'.$value)
+                        : null;
+                })->preview(function ($value, $disk) {
+                    return $value
+                        ? Storage::disk($disk)->url('images/'.$value)
+                        : null;
+                })
         ];
     }
 
