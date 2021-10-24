@@ -1,5 +1,5 @@
 <footer class="bg-rich-green-light roboto">
-    <div class="content-container h-50 m-top-15 py-5">
+    <div class="content-container h-50  py-5">
         <div class="row">
             <div class="col-4 medium pale-spring">
                 <div class="d-flex justify-content-center">

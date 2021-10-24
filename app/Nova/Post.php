@@ -57,7 +57,7 @@ class Post extends Resource
                     'file_name'=>basename($path),
                     'url'=>$url
                 ];
-            }) ->disk('s3')
+            })->disk('s3')
                 ->thumbnail(function ($value, $disk) {
                     return $value
                         ? Storage::disk($disk)->url('images/'.$value)
@@ -66,7 +66,7 @@ class Post extends Resource
                     return $value
                         ? Storage::disk($disk)->url('images/'.$value)
                         : null;
-                })
+                })->required()
         ];
     }
 
