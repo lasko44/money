@@ -1,7 +1,7 @@
 <nav class="bg-rich-green-dark">
     <div class="logo abril">
         <h4>
-            <a href="{{route('home')}}">Homemade Money
+            <a href="{{route('home')}}">Money Homemade
             </a>
         </h4>
     </div>

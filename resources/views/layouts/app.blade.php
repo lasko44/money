@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-rich-green-light">
+<body class="bg-extra-pale-spring">
     <div id="app">
         @include('partials.main-nav')
         @yield('content')
@@ -31,5 +31,6 @@
             nav.classList.toggle('nav-list-active');
         }
     </script>
+    @yield('scripts')
 </body>
 </html>

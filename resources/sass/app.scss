@@ -22,6 +22,8 @@ body{
     margin-right: auto;
 }
 
+//region General Styles
+
 //region Fonts
 .abril{
     font-family: 'Abril Fatface', cursive;
@@ -311,11 +313,12 @@ nav{
     justify-content: space-around;
     padding-top: 3vh;
     padding-bottom: 3vh;
+    margin-bottom: 0!important;
     li{
         display: flex;
         justify-content: space-around;
         list-style: none;
-        font-size: 1.25rem;
+        font-size: 1em;
         a{
             color: $extra-pale-spring;
             text-decoration: none;
@@ -368,6 +371,28 @@ nav{
 
 //endregion
 
+//endregion
+
+//region Large Screens
+@media screen and (min-width: 992px) {
+    //For Large Laptops
+    .container {
+        width: 962px;
+    }
+}
+
+//endregion
+
+//region Extra Large Screens
+@media screen and (min-width: 1280px) {
+    //For Big TV's (HD Screens)
+    .container {
+        width: 1250px;
+    }
+}
+
+//end region
+
 
 //region Phone
 @media screen and (max-width:768px){
@@ -400,5 +425,11 @@ nav{
     .nav-list-active{
         transform: translateX(0%);
     }
+
+    //region Phone Sub nav
+    .sub-nav li {
+        font-size: .65em;
+    }
+    //endregion
 }
 //endregion

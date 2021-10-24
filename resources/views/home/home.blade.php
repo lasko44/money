@@ -1,16 +1,20 @@
 @extends('layouts.app')
 
+@section('title')
+    Money Homemade
+@endsection
+
 @section('content')
     @include('partials.carousel')
     @include('partials.sub-nav')
     <div class="content-container">
         <div class="row m-top-10 m-bottom-10">
             <div class="col-md-8">
-                <h2 class="display-3 extra-pale-spring abril">Latest News</h2>
+                <h2 class="display-3 rich-green-dark abril">Latest News</h2>
             </div>
             <div class="col-md-4">
                 <div class="d-flex justify-content-center">
-                    <h5 class="display-6 extra-pale-spring abril">Trending Topics</h5>
+                    <h5 class="display-6 rich-green-dark  abril">Trending Topics</h5>
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="h-line-thin bg-blue-saphire"></div>
@@ -49,15 +53,13 @@
             </div>
             <div class="row">
                 <div class="d-flex justify-content-center">
-                    <p class="small roboto rich-green-dark">
-                        <script> document.write(new Date().toLocaleDateString()); </script>
-                    </p>
+                    <p class="small roboto rich-green-dark" id="date"></p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row bg-blue-saphire m-top-10 ">
-        <div class="content-container p-5">
+        <div class="content-container p-5" id="blue-section">
             <div class="row">
                 <div class="d-flex justify-content-center">
                     <div class="col-5">
@@ -101,4 +103,24 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+<script>
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+
+    let div = document.getElementById('blue-section');
+    window.addEventListener("resize", function() {
+        console.log(div.classList);
+        if (window.innerWidth < 500) {
+           div.classList.remove("p-5");
+            console.log(div.classList);
+        }
+    });
+</script>
+
 @endsection

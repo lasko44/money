@@ -1,7 +1,7 @@
-<footer class="bg-rich-green-light roboto">
+<footer class="bg-rich-green-dark roboto m-top-10">
     <div class="content-container h-50  py-5">
         <div class="row">
-            <div class="col-4 medium pale-spring">
+            <div class="col-4 medium extra-pale-spring">
                 <div class="d-flex justify-content-center">
                     <ul>
                         <li>Lorem Ipsum</li>
@@ -11,7 +11,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-4 medium pale-spring">
+            <div class="col-4 medium extra-pale-spring">
                 <div class="d-flex justify-content-center">
                     <ul>
                         <li>Lorem Ipsum</li>
@@ -21,7 +21,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-4 medium pale-spring">
+            <div class="col-4 medium extra-pale-spring">
                 <div class="d-flex justify-content-center">
                     <ul>
                         <li>Lorem Ipsum</li>
