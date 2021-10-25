@@ -13,6 +13,7 @@ class Post extends Model
         'sub_title',
         'body',
         'file_name',
+        'slug',
         'url'
     ];
 }

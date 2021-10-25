@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BlogCategoryController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\WelcomeController;
@@ -22,6 +24,11 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::get('/post',[PostController::class, 'index'])->name('post.index');
-Route::post('/post', [PostController::class, 'store'])->name('post.store');
-Route::get('/show', [PostController::class, 'show'])->name('post.show');
+Route::prefix('blog')->group(function (){
+    Route::prefix('blog-category')->group(function(){
+        Route::get('/{name}',[BlogCategoryController::class, 'show'])->name('blog-category.show');
+        Route::get('/{name}/{slug}', [PostController::class, 'show'])->name('post.category.show');
+    });
+    Route::get('/', [BlogController::class, 'index'])->name('blog.index');
+    Route::get('/{slug}',[PostController::class, 'show'])->name('blog.post.show');
+});
