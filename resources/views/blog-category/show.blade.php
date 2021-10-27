@@ -1,7 +1,7 @@
 @extends('layouts.blog-category-home')
 
 @section('blog-category-title')
-    {{'There will be a title'}}
+    {{$title.' - Money Homemade' ? :'Money Homemade'}}
 @endsection
 
 @section('content')

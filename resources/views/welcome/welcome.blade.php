@@ -72,6 +72,11 @@
                                 </div>
                             </div>
                         </div>
+                </div>
+            </div>
+                <div class="row m-top-2 m-bottom-2">
+                    <div class="d-flex justify-content-center">
+                        <a class="abril bg-rich-green-dark p-3 rounded-3 extra-pale-spring larger" href="{{route('home')}}">Lets Get Started</a>
                     </div>
                 </div>
             </div>

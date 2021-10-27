@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BlogCategory;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -14,6 +15,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home.home');
+        $blogCategories = BlogCategory::where('featured',true)->get(['id','name']);
+        return view('home.home',[
+                'blogCategories'=>$blogCategories
+            ]);
     }
 }

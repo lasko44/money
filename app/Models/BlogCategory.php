@@ -11,4 +11,10 @@ class BlogCategory extends Model
         'name',
         'featured',
     ];
+
+    //region Relationships
+    public function Post()
+    {
+        return $this->hasMany(Post::class);
+    }
 }

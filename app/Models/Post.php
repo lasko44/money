@@ -14,6 +14,13 @@ class Post extends Model
         'body',
         'file_name',
         'slug',
-        'url'
+        'url',
+        'blog_category_id'
     ];
+
+    //region Relationships
+    public function BlogCategory(){
+        return $this->belongsTo(BlogCategory::class);
+    }
+    //endregion
 }

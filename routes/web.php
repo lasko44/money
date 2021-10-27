@@ -26,7 +26,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::prefix('blog')->group(function (){
     Route::prefix('blog-category')->group(function(){
-        Route::get('/{name}',[BlogCategoryController::class, 'show'])->name('blog-category.show');
+        Route::get('/{id}',[BlogCategoryController::class, 'show'])->name('blog-category.show');
         Route::get('/{name}/{slug}', [PostController::class, 'show'])->name('post.category.show');
     });
     Route::get('/', [BlogController::class, 'index'])->name('blog.index');

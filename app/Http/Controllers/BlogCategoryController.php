@@ -11,7 +11,12 @@ class BlogCategoryController extends Controller
 
     }
 
-    public function show(BlogCategory $blogCategory = null){
-        return view('blog-category.show');
+    public function show($blogCategory){
+        $blogCategory = BlogCategory::find($blogCategory);
+        $title = $blogCategory->name;
+
+        return view('blog-category.show',[
+            'title'=>$title
+        ]);
     }
 }
