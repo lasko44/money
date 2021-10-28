@@ -9,7 +9,7 @@
         <div class="row">
             <div class="content-container py-5">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="row">
                             <h1 class="display-3 fw-bolder rich-green-dark abril">
                                 {{$blogCategory->name}}
@@ -24,9 +24,9 @@
                         </div>
 
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="d-flex justify-content-center">
-                            <img class="img-fluid rounded-circle" src="https://via.placeholder.com/300x300">
+                            <img class="img-fluid rounded-circle brave" src="{{asset('/images/brave.png')}}" height="300" width="300" alt="">
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
             <div class="col-9">
                 <div class="content-container m-top-5">
                     <ol>
-                        
+
                     </ol>
                 </div>
             </div>

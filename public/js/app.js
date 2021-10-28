@@ -5217,8 +5217,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ['title', 'link', 'excerpt', 'thumbnail'],
   mounted: function mounted() {
     console.log('Blog Item Mounted');
   }
@@ -41594,7 +41594,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" })
+  return _c("li")
 }
 var staticRenderFns = []
 render._withStripped = true

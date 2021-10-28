@@ -46,6 +46,12 @@ body{
 }
 //endregion
 
+//region Image Filter
+.brave{
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-25deg) saturate(600%) contrast(0.8);
+}
+//endregion
+
 //region Borders
 .border-right-rgd{
     border-right:solid thin $rich-green-dark;
