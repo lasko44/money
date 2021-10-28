@@ -403,6 +403,10 @@ nav{
         text-decoration: underline;
         cursor: pointer;
     }
+    .link-active{
+        font-weight: bold;
+        text-decoration: $blue-saphire underline;
+    }
 }
 //endregion
 

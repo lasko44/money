@@ -18809,6 +18809,12 @@ nav {
   cursor: pointer;
 }
 
+.category-nav .link-active {
+  font-weight: bold;
+  -webkit-text-decoration: #035E7B underline;
+          text-decoration: #035E7B underline;
+}
+
 @media screen and (min-width: 992px) {
   .container {
     width: 962px;
