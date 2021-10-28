@@ -9,6 +9,7 @@ class BlogCategory extends Model
 {
     protected $fillable = [
         'name',
+        'summary',
         'featured',
     ];
 

@@ -13,10 +13,10 @@ class BlogCategoryController extends Controller
 
     public function show($blogCategory){
         $blogCategory = BlogCategory::find($blogCategory);
-        $title = $blogCategory->name;
-
+        $categories = BlogCategory::get(['id','name'])->all();
         return view('blog-category.show',[
-            'title'=>$title
+            'blogCategory'=>$blogCategory,
+            'categories'=>$categories
         ]);
     }
 }

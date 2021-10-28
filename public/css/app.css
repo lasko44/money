@@ -18393,6 +18393,10 @@ body {
   font-size: larger;
 }
 
+.border-right-rgd {
+  border-right: solid thin #001a19;
+}
+
 .m-top-2 {
   margin-top: 2vh;
 }

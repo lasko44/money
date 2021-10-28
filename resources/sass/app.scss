@@ -46,6 +46,12 @@ body{
 }
 //endregion
 
+//region Borders
+.border-right-rgd{
+    border-right:solid thin $rich-green-dark;
+}
+//endregion
+
 //region Margins
 .m-top-2{
     margin-top: 2vh;
@@ -391,7 +397,7 @@ nav{
     }
 }
 
-//end region
+//endregion
 
 
 //region Phone
