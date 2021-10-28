@@ -27,6 +27,7 @@ import Vue from 'vue'
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('custom-nav', require('./components/nav').default);
 Vue.component('blog-item',require('./components/BlogItem').default);
+Vue.component('blog-list-item',require('./components/BlogListItem').default);
 Vue.component('money-card',require('./components/MoneyCard').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
