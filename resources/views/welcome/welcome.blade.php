@@ -23,7 +23,7 @@
 <body class="bg-rich-green-light">
     <div id="app">
         @include('partials.welcome-nave')
-        <div class="content-container m-bottom-10">
+        <div class="welcome-container m-bottom-10">
             <div class="container m-top-15 m-top-10 bg-rich-green-extra-light rounded-3 shadow-rg-bl-sm p-4">
                 <div class="row">
                     <div class="col-md-6">

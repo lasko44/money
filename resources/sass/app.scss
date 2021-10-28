@@ -22,6 +22,11 @@ body{
     margin-right: auto;
 }
 
+.welcome-container{
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
 //region General Styles
 
 //region Fonts
@@ -381,6 +386,24 @@ nav{
     right: -45%;
 }
 
+//endregion
+
+//region Category Nav
+.category-nav{
+    font-size: 1rem;
+    li{
+        list-style: none;
+    }
+    a{
+        color:$rich-green-dark;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
 //endregion
 
 //endregion
