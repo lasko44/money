@@ -11,8 +11,5 @@ export default {
       'excerpt',
       'thumbnail'
     ],
-    mounted() {
-        console.log('Blog Item Mounted')
-    }
 }
 </script>

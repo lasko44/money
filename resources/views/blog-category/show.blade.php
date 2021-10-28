@@ -11,22 +11,21 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="row">
-                            <h1 class="display-3 fw-bolder rich-green-dark abril">
+                            <h1 class="display-5 fw-bolder rich-green-dark abril">
                                 {{$blogCategory->name}}
                             </h1>
                             <div class="h-line-thin bg-blue-saphire"></div>
                         </div>
-                        <div class="row m-top-5">
-                            <p class="medium roboto rich-green-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        <div class="row m-top-2">
+                            <p class="roboto rich-green-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Quam viverra orci sagittis eu volutpat odio. Aliquam
                                 eleifend mi in nulla posuere sollicitudin.</p>
                         </div>
-
                     </div>
                     <div class="col-lg-6">
                         <div class="d-flex justify-content-center">
-                            <img class="img-fluid rounded-circle brave" src="{{asset('/images/brave.png')}}" height="300" width="300" alt="">
+                            <img class="img-fluid rounded-circle brave" src="{{asset('/images/brave.png')}}" height="200" width="200" alt="">
                         </div>
                     </div>
                 </div>
