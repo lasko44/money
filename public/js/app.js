@@ -5216,8 +5216,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['title', 'link', 'excerpt', 'thumbnail', 'likeable'],
+  props: ['post', 'link'],
+  mounted: function mounted() {},
   methods: {}
 });
 
@@ -41841,7 +41852,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("div", { staticClass: "blog-item" }, [
+    _c("a", { staticClass: "m-top-2", attrs: { href: _vm.link } }, [
+      _c("div", { staticClass: "row" }, [
+        _c("img", { attrs: { src: _vm.post.url, alt: _vm.post.title } })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("h4", { staticClass: "abril" }, [_vm._v(_vm._s(_vm.post.title))]),
+        _vm._v(" "),
+        _c("p", { staticClass: "roboto" }, [_vm._v(_vm._s(_vm.post.body))])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -41969,7 +41992,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "content-container m-top-5 m-bottom-5 bg-rich-green-dark py-1 rounded-3"
+        "small-container m-top-2 m-bottom-2 bg-rich-green-dark py-1 rounded-3"
     },
     [
       _vm._m(0),
@@ -41999,7 +42022,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row m-top-5" }, [
       _c("div", { staticClass: "d-flex justify-content-center" }, [
-        _c("h4", { staticClass: "abril display-4 extra-pale-spring" }, [
+        _c("h4", { staticClass: "abril extra-pale-spring" }, [
           _vm._v("Money Made")
         ])
       ])
@@ -42021,7 +42044,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row m-top-3 m-bottom-3" }, [
       _c("div", { staticClass: "d-flex justify-content-center" }, [
-        _c("h3", { staticClass: "abril display-3 extra-pale-spring" }, [
+        _c("h3", { staticClass: "abril display-6 extra-pale-spring" }, [
           _vm._v("$1,000")
         ])
       ])

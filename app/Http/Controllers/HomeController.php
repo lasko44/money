@@ -16,11 +16,16 @@ class HomeController extends Controller
      */
     public function index(){
         $blogCategories = BlogCategory::where('featured',true)->get(['id','name']);
-        $latestNews = Post::where('latest_news', true)->take(5);
-        $trending = Post::where('trending', true)->take(5);
+        $latestNews = Post::where('latest_news', true)->take(4)->get();
+        $trending = Post::where('trending', true)->take(8)->get(['title','id']);
+        $main = Post::all()->sortByDesc('likes')->take(2);
+
 
         return view('home.home',[
             'blogCategories'=>$blogCategories,
+            'latestNews'=>$latestNews,
+            'trending'=>$trending,
+            'main'=>$main
         ]);
     }
 }

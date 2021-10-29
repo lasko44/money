@@ -24,7 +24,8 @@ class PostController extends Controller
         ]);
         return $post;
     }
-    public function show(Post $post){
-        return Storage::disk('s3')->response('/images' . $post->file_name);
+    public function show($postId){
+      $post = Post::find($postId)->first();
+        dd($post);
     }
 }
