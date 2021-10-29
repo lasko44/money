@@ -19,8 +19,19 @@ class Post extends Model
     ];
 
     //region Relationships
+    /**
+     * @var mixed
+     */
+
+
     public function BlogCategory(){
         return $this->belongsTo(BlogCategory::class);
+    }
+    //endregion
+
+    //region Model Methods
+    public function excerpt(){
+        return substr($this->body, 3, 40);
     }
     //endregion
 }

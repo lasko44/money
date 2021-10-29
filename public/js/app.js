@@ -5238,8 +5238,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['title', 'link', 'excerpt', 'thumbnail', 'likeable'],
+  props: ['post'],
+  mounted: function mounted() {
+    console.log(this.post);
+  },
   methods: {}
 });
 
@@ -41849,9 +41866,35 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("li", [
+    _c("a", [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-9" }, [
+          _c("h2", { staticClass: "abril" }, [_vm._v(_vm._s(_vm.post.title))]),
+          _vm._v(" "),
+          _c("p", { staticClass: "roboto" }, [_vm._v(_vm._s(_vm.post.body))])
+        ]),
+        _vm._v(" "),
+        _vm._m(0)
+      ])
+    ])
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-3" }, [
+      _c("div", { staticClass: "d-flex justify-content-center" }, [
+        _c("img", {
+          staticClass: "img-thumbnail",
+          attrs: { height: "100", width: "100" }
+        })
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 

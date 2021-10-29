@@ -23,8 +23,8 @@ class PostFactory extends Factory
     {
         $rnd = rand(1, 4);
         return [
-            'title'=>$this->faker->title,
-            'sub_title'=>$this->faker->title,
+            'title'=>$this->faker->company(),
+            'sub_title'=>$this->faker->company(),
             'body'=>$this->faker->realText,
             'file_name'=>'this is file',
             'url'=>'https://via.placeholder.com/1920x500',

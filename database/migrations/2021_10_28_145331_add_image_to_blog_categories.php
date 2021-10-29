@@ -14,8 +14,8 @@ class AddImageToBlogCategories extends Migration
     public function up()
     {
         Schema::table('blog_categories', function (Blueprint $table) {
-            $table->string('file_name');
-            $table->string('url');
+            $table->string('file_name')->nullable();
+            $table->string('url')->nullable();
         });
     }
 

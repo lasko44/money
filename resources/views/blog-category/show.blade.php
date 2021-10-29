@@ -41,8 +41,12 @@
             </div>
             <div class="col-9">
                 <div class="content-container m-top-5">
-                    <ol>
-
+                    <ol class="blog-list">
+                        @foreach($blogCategory->Post as $post)
+                            <blog-list-item
+                                :post="{{$post}}"
+                            ></blog-list-item>
+                        @endforeach
                     </ol>
                 </div>
             </div>
