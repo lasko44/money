@@ -18746,6 +18746,11 @@ nav {
   cursor: pointer;
 }
 
+.home-hero {
+  background-image: url(/images/money-1.jpg?83f52bd6d2b2ba5a92c6dbb269b69f91);
+  background-size: cover;
+}
+
 .sub-nav {
   display: flex;
   justify-content: space-around;
@@ -18791,9 +18796,9 @@ nav {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
-  -moz-column-gap: 5vw;
-       column-gap: 5vw;
-  padding-left: 5vw !important;
+  -moz-column-gap: 10vw;
+       column-gap: 10vw;
+  padding-left: 3vw !important;
 }
 
 .trending-list li::marker {

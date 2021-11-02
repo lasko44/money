@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LikeController;
+use App\Http\Controllers\FixStuffController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,5 @@ Route::prefix('like')->group(function(){
     Route::get('/add',[LikeController::class,'add']);
     Route::get('/remove',[LikeController::class,'remove']);
 });
+
+Route::get('/replace', [FixStuffController::class, 'replace'])->name('fix.images');

@@ -41855,7 +41855,10 @@ var render = function() {
   return _c("div", { staticClass: "blog-item" }, [
     _c("a", { staticClass: "m-top-2", attrs: { href: _vm.link } }, [
       _c("div", { staticClass: "row" }, [
-        _c("img", { attrs: { src: _vm.post.url, alt: _vm.post.title } })
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: _vm.post.url, alt: _vm.post.title }
+        })
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
@@ -41992,7 +41995,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "small-container m-top-2 m-bottom-2 bg-rich-green-dark py-1 rounded-3"
+        "content-container m-top-2 m-bottom-2 bg-rich-green-dark py-1 rounded-3"
     },
     [
       _vm._m(0),

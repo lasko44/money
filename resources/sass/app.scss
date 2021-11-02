@@ -433,6 +433,13 @@ nav {
 
 //endregion
 
+//region Hero
+.home-hero{
+    background-image: url("resources/images/money-1.jpg");
+    background-size: cover;
+}
+//end region
+
 //region Sub Nav
 .sub-nav {
     display: flex;
@@ -483,8 +490,8 @@ nav {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
-    column-gap: 5vw;
-    padding-left: 5vw !important;
+    column-gap: 10vw;
+    padding-left: 3vw !important;
 
     li::marker {
         font-family: 'Roboto', sans-serif;

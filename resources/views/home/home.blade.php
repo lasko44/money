@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    @include('partials.carousel')
+    @include('partials.home-hero')
     @include('partials.sub-nav')
 
     <div class="content-container m-top-5">
@@ -24,16 +24,17 @@
                     @endforeach
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-1"></div>
+            <div class="col-md-7 m-top-10">
                 <div class="row">
                     <div class="content-container">
                         <money-card></money-card>
                     </div>
 
                 </div>
-                <div class="row m-top-2">
+                <div class="row m-top-5 m-bottom-5">
                     <div class="col-md-12">
-                        <div class="px-4 m-left-2">
+                        <div class="m-left-2">
                             <h3 class="rich-green-dark m-top-5 abril">Trending Topics</h3>
                             <div class="h-line-extra-thin bg-blue-saphire"></div>
                         </div>
@@ -49,7 +50,7 @@
                     </div>
                 </div>
                 @foreach($main as $post)
-                <div class="row">
+                <div class="row ">
                     <div class="d-flex justify-content-center">
                             <blog-item class="m-top-2"  :post="{{$post}}" :link="'{{route('post.show',$post->id)}}'"></blog-item>
                     </div>

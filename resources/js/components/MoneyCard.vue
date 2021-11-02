@@ -1,5 +1,5 @@
 <template>
-    <div class="small-container m-top-2 m-bottom-2 bg-rich-green-dark py-1 rounded-3">
+    <div class="content-container m-top-2 m-bottom-2 bg-rich-green-dark py-1 rounded-3">
             <div class="row m-top-5">
                 <div class="d-flex justify-content-center">
                     <h4 class="abril extra-pale-spring">Money Made</h4>
