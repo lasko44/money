@@ -388,7 +388,7 @@ nav {
 .nav-list {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 50%;
 }
 
 .nav-list li {
@@ -435,6 +435,11 @@ nav {
 
 //region Hero
 .home-hero{
+    background-image: url("resources/images/money-1.jpg");
+    background-size: cover;
+}
+
+.about-hero{
     background-image: url("resources/images/money-1.jpg");
     background-size: cover;
 }
@@ -561,7 +566,7 @@ nav {
 
 //region Category Nav
 .category-nav {
-    font-size: .75rem;
+    font-size: 1rem;
     padding-left: 1rem !important;
 
     li {
@@ -599,10 +604,13 @@ nav {
 //endregion
 
 //region Extra Large Screens
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
     //For Big TV's (HD Screens)
     .container {
         width: 1250px;
+    }
+    .nav-list {
+       font-size: 1.3rem;
     }
 }
 
@@ -610,7 +618,7 @@ nav {
 
 
 //region Phone
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 771px) {
     body {
         overflow-x: hidden;
     }

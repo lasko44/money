@@ -18705,7 +18705,7 @@ nav {
 .nav-list {
   display: flex;
   justify-content: space-around;
-  width: 40%;
+  width: 50%;
 }
 
 .nav-list li {
@@ -18747,6 +18747,11 @@ nav {
 }
 
 .home-hero {
+  background-image: url(/images/money-1.jpg?83f52bd6d2b2ba5a92c6dbb269b69f91);
+  background-size: cover;
+}
+
+.about-hero {
   background-image: url(/images/money-1.jpg?83f52bd6d2b2ba5a92c6dbb269b69f91);
   background-size: cover;
 }
@@ -18855,7 +18860,7 @@ nav {
 }
 
 .category-nav {
-  font-size: 0.75rem;
+  font-size: 1rem;
   padding-left: 1rem !important;
 }
 
@@ -18885,13 +18890,17 @@ nav {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .container {
     width: 1250px;
   }
+
+  .nav-list {
+    font-size: 1.3rem;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 771px) {
   body {
     overflow-x: hidden;
   }

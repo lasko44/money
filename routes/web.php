@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\BlogCategoryController;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AppController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
@@ -19,10 +19,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
+//Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [AppController::class, 'index'])->name('home');
+Route::get('/about', [AppController::class, 'aboutIndex'])->name('about');
 
 Route::prefix('blog')->group(function (){
     Route::prefix('blog-category')->group(function(){

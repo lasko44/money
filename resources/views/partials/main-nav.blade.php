@@ -7,9 +7,8 @@
     </div>
     <ul class="nav-list">
         <li class="py-1"><a href="{{route('home')}}">Home</a> </li>
-        <li class="py-1"><a href="{{route('home')}}">About</a> </li>
+        <li class="py-1"><a href="{{route('about')}}">About</a> </li>
         <li class="py-1"><a href="{{route('home')}}">Blog</a> </li>
-        <li class="py-1"><a href="{{route('login')}}">Login</a> </li>
         <li>
             <label>
                 <i class="fas fa-search fa-lg blue-saphire"></i>

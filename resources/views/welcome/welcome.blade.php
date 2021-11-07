@@ -23,8 +23,8 @@
 <body class="bg-rich-green-light">
     <div id="app">
         @include('partials.welcome-nave')
-        <div class="welcome-container m-bottom-10">
-            <div class="container m-top-15 m-top-10 bg-rich-green-extra-light rounded-3 shadow-rg-bl-sm p-4">
+        <div class="welcome-container m-bottom-5">
+            <div class="container m-top-5 bg-rich-green-extra-light rounded-3 shadow-rg-bl-sm p-4">
                 <div class="row">
                     <div class="col-md-6">
                         <h1 class="abril display-3 rich-green-dark m-top-5">Let's Make Money From Home</h1>
