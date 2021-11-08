@@ -51,8 +51,7 @@ class NovaApplicationServiceProvider extends ServiceProvider
         $this->gate();
 
         Nova::auth(function ($request) {
-            dd($request);
-            return app()->environment('local') ||
+            return app()->environment('production') ||
                    Gate::check('viewNova', [$request->user()]);
         });
     }
