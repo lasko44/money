@@ -51,6 +51,7 @@ class NovaApplicationServiceProvider extends ServiceProvider
         $this->gate();
 
         Nova::auth(function ($request) {
+            dd($request);
             return app()->environment('local') ||
                    Gate::check('viewNova', [$request->user()]);
         });
@@ -66,10 +67,7 @@ class NovaApplicationServiceProvider extends ServiceProvider
     protected function gate()
     {
         Gate::define('viewNova', function ($user) {
-            dd($user);
-            return in_array($user->email, [
-                "matt.laszkiewicz@gmail.com"
-            ]);
+            return true;
         });
     }
 
