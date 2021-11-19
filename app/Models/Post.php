@@ -19,9 +19,6 @@ class Post extends Model
     ];
 
     //region Relationships
-    /**
-     * @var mixed
-     */
 
 
     public function BlogCategory(){
@@ -30,8 +27,9 @@ class Post extends Model
     //endregion
 
     //region Model Methods
-    public function excerpt(){
-        return substr($this->body, 3, 40);
+    public function related(){
+        return Post::inRandomOrder()->where('blog_category_id',$this->blog_category_id)
+            ->limit(5)->get(['id','title']);
     }
     //endregion
 }

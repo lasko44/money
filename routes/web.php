@@ -31,5 +31,4 @@ Route::prefix('blog')->group(function (){
         Route::get('post/{postId}', [PostController::class, 'show'])->name('post.show');
     });
     Route::get('/', [BlogController::class, 'index'])->name('blog.index');
-    Route::get('/{slug}',[PostController::class, 'show'])->name('blog.post.show');
 });

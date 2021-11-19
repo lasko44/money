@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
@@ -48,6 +49,8 @@ class Post extends Resource
             ID::make(__('ID'), 'id')->sortable(),
             Text::make('Title','title')->required(),
             Text::make('Sub Title','sub_title')->nullable(),
+            BelongsTo::make('Category', 'BlogCategory', 'app\nova\BlogCategory')->required(),
+
             Text::make('Slug','slug')->rules(['min:3','required']),
             Trix::make('Body','body')->required(),
             Image::make('Image', 'file_name')->store(function (Request $request){

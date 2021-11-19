@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class BlogCategory extends Model
 {
     protected $fillable = [
+        'id',
         'name',
         'summary',
         'featured',

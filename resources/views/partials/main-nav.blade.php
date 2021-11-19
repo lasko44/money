@@ -1,9 +1,8 @@
 <nav class="bg-rich-green-dark">
-    <div class="logo abril">
-        <h4>
-            <a href="{{route('home')}}">Money Homemade
+    <div class="logo">
+            <a href="{{route('home')}}">
+                <img src="{{asset('/images/money-logo.png')}}" alt="money-homemade" height="75"/>
             </a>
-        </h4>
     </div>
     <ul class="nav-list">
         <li class="py-1"><a href="{{route('home')}}">Home</a> </li>

@@ -25,7 +25,7 @@ class PostFactory extends Factory
         return [
             'title'=>$this->faker->company(),
             'sub_title'=>$this->faker->company(),
-            'body'=>$this->faker->realText,
+            'body'=>$this->faker->sentences(75,true),
             'file_name'=>'this is file',
             'url'=>'https://via.placeholder.com/1920x500',
             'slug'=>'slugger',

@@ -87,6 +87,7 @@ body {
 .m-top-1 {
     margin-top: 1vh;
 }
+
 .m-top-2 {
     margin-top: 2vh;
 }
@@ -418,31 +419,48 @@ nav {
 }
 
 .logo {
-    a {
-        color: $extra-pale-spring;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: $extra-pale-spring;
-        cursor: pointer;
+    height: 40px;
+    img{
+        position: relative;
+        top: -24px;
     }
 }
 
 //endregion
 
+//region Posts
+.post-hero {
+    height: 20vh;
+    max-height: 20vh;
+    min-width: 100vw;
+
+    img {
+        max-height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.post-text {
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+//endregion
+
 //region Hero
-.home-hero{
+.home-hero {
     background-image: url("resources/images/money-1.jpg");
     background-size: cover;
 }
 
-.about-hero{
+.about-hero {
     background-image: url("resources/images/money-1.jpg");
     background-size: cover;
 }
+
 //end region
 
 //region Sub Nav
@@ -481,11 +499,12 @@ nav {
     }
 }
 
-.blog-item{
-    h4{
+.blog-item {
+    h4 {
         text-decoration: underline $blue-saphire;
     }
-    a{
+
+    a {
         color: $rich-green-dark;
         text-decoration: none;
     }
@@ -610,7 +629,7 @@ nav {
         width: 1250px;
     }
     .nav-list {
-       font-size: 1.3rem;
+        font-size: 1.3rem;
     }
 }
 

@@ -25,7 +25,9 @@ class PostController extends Controller
         return $post;
     }
     public function show($postId){
-      $post = Post::find($postId)->first();
-        dd($post);
+      $post = Post::find($postId);
+        return view('blog.show', [
+            'post'=>$post
+        ]);
     }
 }
