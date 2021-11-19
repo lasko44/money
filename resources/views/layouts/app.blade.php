@@ -11,6 +11,15 @@
     <meta name="keywords" content="Money, WFH, Make Money From Home, Extra Cash, Homemade, Money Homemade">
 
     <title>@yield('title')</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EL9D6526PS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EL9D6526PS');
+    </script>
     <!-- google Ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8159498208698836"
             crossorigin="anonymous"></script>
