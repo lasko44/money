@@ -11,8 +11,7 @@
     <meta name="keywords" content="Money, WFH, Make Money From Home, Extra Cash, Homemade, Money Homemade">
 
     <title>@yield('title')</title>
-
-    <!-- Google Ads -->
+    <!-- google Ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8159498208698836"
             crossorigin="anonymous"></script>
 
