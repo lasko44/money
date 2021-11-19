@@ -3,7 +3,7 @@
         <div class="row">
             <div class="d-flex justify-content-center">
                 <a href="{{route('home')}}">
-                    <img src="{{asset('/images/money-foot.png')}}" alt="make money from home" height="150"/>
+                    <img class="img-fluid" src="{{asset('/images/money-foot.png')}}" alt="make money from home" height="150"/>
                 </a>
             </div>
         </div>

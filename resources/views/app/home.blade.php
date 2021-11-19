@@ -67,16 +67,17 @@
                     <div class="col-5">
                             <div class="row">
                                 <div class="d-flex justify-content-start">
-                                    <h4 class="display-6 abril rich-green">Lorem Ipsum</h4>
+                                    <h4 class="display-6 abril rich-green">I'm not an Entrepreneur</h4>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="d-flex justify-content-start">
                                     <p class=" extra-pale-spring">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque.
-                                        Massa tincidunt dui ut ornare lectus sit amet est.
+                                       I know there are a million websites, videos, and "entrepreneurs", telling
+                                        you that if you pay them enough money, they will give you a key to a new
+                                        mansion and Lamborghini. I'm not here to sell you that dream, in fact I'm not
+                                        here to sell you any thing. I want to make some extra cash with minimal effort
+                                        from my home. I'm taking you on that journey.
                                     </p>
                                 </div>
                             </div>
@@ -87,16 +88,17 @@
                     <div class="col-5">
                             <div class="row">
                                 <div class="d-flex justify-content-start">
-                                    <h4 class="display-6 abril rich-green">Lorem Ipsum</h4>
+                                    <h4 class="display-6 abril rich-green">Does my method work?</h4>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="d-flex justify-content-start">
                                     <p class="extra-pale-spring">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque.
-                                        Massa tincidunt dui ut ornare lectus sit amet est.
+                                        I'm going to be completely honest. I have no idea. I'm just a normal person
+                                        that wants some extra cash. There are a lot of websites and apps that claim
+                                        they can give a little extra cash. Those sites really mean a little, plus they take
+                                        more effort than it is worth and they have minimum withdrawals. I'm going to
+                                        test the best ways to make extra money from home.
                                     </p>
                                 </div>
                             </div>
