@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <meta name="description" content="Find the best ways for you to make money from home. Extra cash without the extra pain of figuring out what methods are not worth it">
-    <meta name="keywords" content="Money, WFH, Make Money From Home, Extra Cash">
+    <meta name="keywords" content="Money, WFH, Make Money From Home, Extra Cash, Homemade, Money Homemade">
 
     <title>@yield('title')</title>
 
