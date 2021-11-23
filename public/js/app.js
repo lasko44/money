@@ -41866,7 +41866,7 @@ var render = function() {
         _vm._v(" "),
         _c("p", {
           staticClass: "roboto",
-          domProps: { innerHTML: _vm._s(_vm.post.body.slice(4, 200) + "...") }
+          domProps: { innerHTML: _vm._s(_vm.post.body.slice(5, 200) + "...") }
         })
       ])
     ])
