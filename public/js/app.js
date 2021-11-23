@@ -41864,9 +41864,10 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _c("h4", { staticClass: "abril" }, [_vm._v(_vm._s(_vm.post.title))]),
         _vm._v(" "),
-        _c("p", { staticClass: "roboto" }, [
-          _vm._v(_vm._s(_vm.post.body.slice(0, 200)) + " ...")
-        ])
+        _c("p", {
+          staticClass: "roboto",
+          domProps: { innerHTML: _vm._s(_vm.post.body.slice(4, 200) + "...") }
+        })
       ])
     ])
   ])
@@ -41900,9 +41901,10 @@ var render = function() {
         _c("div", { staticClass: "col-9" }, [
           _c("h2", { staticClass: "abril" }, [_vm._v(_vm._s(_vm.post.title))]),
           _vm._v(" "),
-          _c("p", { staticClass: "roboto" }, [
-            _vm._v(_vm._s(_vm.post.body.slice(0, 200)))
-          ])
+          _c("p", {
+            staticClass: "roboto",
+            domProps: { innerHTML: _vm._s(_vm.post.body.slice(0, 200) + "...") }
+          })
         ]),
         _vm._v(" "),
         _vm._m(0)
