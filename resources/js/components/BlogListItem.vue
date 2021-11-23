@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-9">
                     <h2 class="abril">{{post.title}}</h2>
-                    <p class="roboto">{{post.body.slice(0,200)}}</p>
+                    <p v-html="post.body.slice(0,200)+'...'" class="roboto"></p>
                 </div>
                 <div class="col-3">
                     <div class="d-flex justify-content-center">
