@@ -6,7 +6,7 @@
             </div>
             <div class="row">
                 <h4 class="abril">{{post.title}}</h4>
-                <p class="roboto">{{post.body.slice(0,200)}} ...</p>
+                <p v-html="post.body.slice(0,200)+'...'" class="roboto"></p>
             </div>
         </a>
     </div>

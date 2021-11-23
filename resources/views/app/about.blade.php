@@ -15,11 +15,10 @@ About | Money Homemade
                 <div class="h-line-extra-thin bg-rich-green-dark"></div>
                 <div class="row m-top-2">
                     <p class="roboto rich-green-dark">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Pellentesque habitant morbi tristique senectus et netus et.
-                        Imperdiet sed euismod nisi porta lorem. Nec nam aliquam sem et tortor
-                        consequat id porta.
+                        Making extra cash can be a pain, especially with the myriad of sites that say
+                        they can make you money from home. I want to make extra cash from home and I am
+                        going to document my experience. I will be open with my mistakes so you do not have
+                        to make the same homemade money mistakes.
                     </p>
                 </div>
             </div>
