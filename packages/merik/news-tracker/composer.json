@@ -1,0 +1,17 @@
+{
+    "name": "merik/news-tracker",
+    "description": "Search topics from around the web and turn them to a collection tto use in your laravel project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Merik\\NewsTracker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matt Laszkiewicz",
+            "email": "matt.laszkiewicz@gmail.com"
+        }
+    ],
+    "require": {}
+}
