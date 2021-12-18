@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5424096e4864b7bdc78c7cafaf6c2afa",
+    "content-hash": "c08842e530e4684ddd4c6de2d9d01b30",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1970,7 +1970,7 @@
             "version": "3.30.0",
             "dist": {
                 "type": "path",
-                "url": "./nova",
+                "url": "./Nova",
                 "reference": "16e1b68b0cd5131db3e6c3c967b254ff5750eee0"
             },
             "require": {
@@ -2842,9 +2842,16 @@
             "dist": {
                 "type": "path",
                 "url": "packages/merik/news-tracker",
-                "reference": "c8e691b1b7a70ecdfbd48a9fd7fe26f01bf6ee20"
+                "reference": "2a9d407c827f4386357731408c75454d03f7a900"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Merik\\NewsTracker\\NewsTrackerServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Merik\\NewsTracker\\": "src/"

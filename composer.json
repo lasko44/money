@@ -22,19 +22,19 @@
         "spatie/laravel-analytics": "^3.11",
         "merik/news-tracker": "@dev"
     },
-    "repositories": {
-        "news-tracker": {
+    "repositories": [
+        {
             "type": "path",
             "url": "packages/merik/news-tracker",
             "options": {
                 "symlink": true
             }
         },
-        "nova": {
+        {
             "type": "path",
-            "url": "./nova"
+            "url": "./Nova"
         }
-    },
+    ],
     "require-dev": {
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",

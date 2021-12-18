@@ -41,6 +41,20 @@ body {
     margin-right: auto;
 }
 
+//region Bootstrap Overrides
+.form-row{
+    max-width: 100%;
+    padding-left:1.3rem;
+    padding-right:1.3rem;
+}
+
+.row{
+    max-width: 100%;
+    padding-left:1.3rem;
+    padding-right:1.3rem;
+}
+//endregion
+
 //region General Styles
 
 //region Fonts

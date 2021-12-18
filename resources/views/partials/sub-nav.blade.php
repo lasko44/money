@@ -1,4 +1,4 @@
-<div class="row">
+
     <div class="h-line-extra-thin bg-rich-green-dark"></div>
     <ul class="sub-nav roboto bg-rich-green-extra-light">
         @foreach($blogCategories as $cat)
@@ -6,4 +6,4 @@
         @endforeach
     </ul>
     <div class="h-line-extra-thin bg-rich-green-dark"></div>
-</div>
+

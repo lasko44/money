@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\BlogCategory;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Merik\NewsTracker\NewsTracker;
 
 class AppController extends Controller
 {

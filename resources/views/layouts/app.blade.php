@@ -34,7 +34,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-extra-pale-spring">
+<body>
     <div id="app">
         @include('partials.main-nav')
         @yield('content')

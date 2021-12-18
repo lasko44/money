@@ -7,6 +7,13 @@
             "Merik\\NewsTracker\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Merik\\NewsTracker\\NewsTrackerServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "Matt Laszkiewicz",
